@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="menu.js" defer></script>
+  <title>KINOPOTERYA</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__title">  
+        <h1 class="h1">Добро Пожаловать!</h1>
+        <h1 class="__h1"><a class="logo" href="index.html">КиноПотеря</a></h1>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="menu">
+        <div class="button">
+          <div class="btnGen">
+            <button onclick="list_genere()" class="list">Список жанров</button>
+            <div id="dropListGen" class="dropList">
+              <a href="romantic.html">Драмы</a>
+              <a href="comedian.html">Комедии</a>
+              <a href="horrors.html">Ужасы</a>
+            </div>
+          </div>
+          <div class="btnFilms">
+            <button onclick="list_films()" class="list">Полный список фильмов</button>
+          </div>
+          <div class="btnProd">
+            <button onclick="list_producer()" class="list">Список режиссеров</button>
+            <div id="dropListProd" class="dropList">
+              <a href="todorovsky.html" class="btnProd">Валерий Тодоровский</a>
+              <a href="todorovsky.html" class="btnProd">Юрий Быков</a>
+              <a href="todorovsky.html" class="btnProd">Кирилл Серебренников</a>
+            </div>
+          </div>
+        </div>
+        <form action="" method="get">
+          <input name="s" placeholder="Искать здесь...">
+          <button class="search"><img src="image/Vector.svg" alt=""></button>
+        </form>        
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="fullField">
+      <div id="contentBiograph" class="contentField">
+        
+      </div> 
+      <div class="contentBio" style="display: none">
+        <div class="todorovsky">
+          <img src="image/тодоровский.jpg" alt="">
+          <div class="characteristic">
+            <h3 class="char">Имя при <br> рождении</h3>
+            <h3 class="char"><a class="FIO" href="https://ru.wikipedia.org/wiki/Тодоровский,_Валерий_Петрович">Валерий Петрович <br> Тодоровский</a></h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Дата рождения</h3>
+            <h3 class="char">8 мая 1962</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Место рождения</h3>
+            <h3 class="char">Одесса, Украинская ССР,<br> СССР</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Гражданство</h3>
+            <h3 class="char">Россия</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Профессия</h3>
+            <h3 class="char">кинорежиссёр<br>сценарист<br>кинопродюсер</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Карьера</h3>
+            <h3 class="char">1986 — наст. время</h3>
+          </div>
+        </div>
+        <div class="infoProd">
+        <h1 class="headInfo">Биография</h1>
+          <p>Родился 8 мая 1962 года в Одессе, в семье кинорежиссёра Петра Ефимовича Тодоровского и продюсера Миры Григорьевны Тодоровской (урождённой Герман). В 1978 году снялся в фильме Ю. Я. Райзмана «Странная женщина» в роли сына главной героини. <br>
+
+            В 1984 году окончил сценарный факультет ВГИКа (мастерская К. К. Парамоновой и И. К. Кузнецова). <br><br>
+            
+            С марта 2000 года занимал должность заместителя генерального директора РТР (позже — телеканала «Россия») по кинопроизводству, с 2003 года — советника генерального директора по кинотелепроектам. Перешёл на телеканал по приглашению его тогдашнего гендиректора Александра Акопова. В данном качестве работал руководителем Отдела кинопроизводства канала, курировал создание телесериалов, в частности, произведённых его фирмой «Рекун-ТВ». С октября 2001 по май 2002 года также был ведущим ток-шоу «Панорама кино» на РТР. Покинул телеканал в конце 2007 года. <br><br>
+            
+            В 2005 году вместе с Леонидом Лебедевым и Вадимом Горяниновым основал кинокомпанию «Красная стрела». <br><br>
+            
+            Является президентом фестиваля новых сериалов «Пилот».</p>
+        </div>
+      </div>
+      <div class="contentBio" style="display: none">
+        <div class="todorovsky">
+          <img src="image/тодоровский.jpg" alt="">
+          <div class="characteristic">
+            <h3 class="char">Имя при <br> рождении</h3>
+            <h3 class="char"><a class="FIO" href="https://ru.wikipedia.org/wiki/Тодоровский,_Валерий_Петрович">Валерий Петрович <br> Тодоровский</a></h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Дата рождения</h3>
+            <h3 class="char">8 мая 1962</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Место рождения</h3>
+            <h3 class="char">Одесса, Украинская ССР,<br> СССР</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Гражданство</h3>
+            <h3 class="char">Россия</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Профессия</h3>
+            <h3 class="char">кинорежиссёр<br>сценарист<br>кинопродюсер</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Карьера</h3>
+            <h3 class="char">1986 — наст. время</h3>
+          </div>
+      </div>
+      <div class="infoProd">
+          <h1 class="headInfo">Биография</h1>
+          <p>Родился 8 мая 1962 года в Одессе, в семье кинорежиссёра Петра Ефимовича Тодоровского и продюсера Миры Григорьевны Тодоровской (урождённой Герман). В 1978 году снялся в фильме Ю. Я. Райзмана «Странная женщина» в роли сына главной героини. <br>
+
+            В 1984 году окончил сценарный факультет ВГИКа (мастерская К. К. Парамоновой и И. К. Кузнецова). <br><br>
+            
+            С марта 2000 года занимал должность заместителя генерального директора РТР (позже — телеканала «Россия») по кинопроизводству, с 2003 года — советника генерального директора по кинотелепроектам. Перешёл на телеканал по приглашению его тогдашнего гендиректора Александра Акопова. В данном качестве работал руководителем Отдела кинопроизводства канала, курировал создание телесериалов, в частности, произведённых его фирмой «Рекун-ТВ». С октября 2001 по май 2002 года также был ведущим ток-шоу «Панорама кино» на РТР. Покинул телеканал в конце 2007 года. <br><br>
+            
+            В 2005 году вместе с Леонидом Лебедевым и Вадимом Горяниновым основал кинокомпанию «Красная стрела». <br><br>
+            
+            Является президентом фестиваля новых сериалов «Пилот».</p>
+      </div>
+      </div>
+      <div class="contentBio" style="display: none">
+        <div class="todorovsky">
+          <img src="image/тодоровский.jpg" alt="">
+          <div class="characteristic">
+            <h3 class="char">Имя при <br> рождении</h3>
+            <h3 class="char"><a class="FIO" href="https://ru.wikipedia.org/wiki/Тодоровский,_Валерий_Петрович">Валерий Петрович <br> Тодоровский</a></h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Дата рождения</h3>
+            <h3 class="char">8 мая 1962</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Место рождения</h3>
+            <h3 class="char">Одесса, Украинская ССР,<br> СССР</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Гражданство</h3>
+            <h3 class="char">Россия</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Профессия</h3>
+            <h3 class="char">кинорежиссёр<br>сценарист<br>кинопродюсер</h3>
+          </div>
+          <div class="characteristic">
+            <h3 class="char">Карьера</h3>
+            <h3 class="char">1986 — наст. время</h3>
+          </div>
+      </div>
+      <div class="infoProd">
+          <h1 class="headInfo">Биография</h1>
+          <p>Родился 8 мая 1962 года в Одессе, в семье кинорежиссёра Петра Ефимовича Тодоровского и продюсера Миры Григорьевны Тодоровской (урождённой Герман). В 1978 году снялся в фильме Ю. Я. Райзмана «Странная женщина» в роли сына главной героини. <br>
+
+            В 1984 году окончил сценарный факультет ВГИКа (мастерская К. К. Парамоновой и И. К. Кузнецова). <br><br>
+            
+            С марта 2000 года занимал должность заместителя генерального директора РТР (позже — телеканала «Россия») по кинопроизводству, с 2003 года — советника генерального директора по кинотелепроектам. Перешёл на телеканал по приглашению его тогдашнего гендиректора Александра Акопова. В данном качестве работал руководителем Отдела кинопроизводства канала, курировал создание телесериалов, в частности, произведённых его фирмой «Рекун-ТВ». С октября 2001 по май 2002 года также был ведущим ток-шоу «Панорама кино» на РТР. Покинул телеканал в конце 2007 года. <br><br>
+            
+            В 2005 году вместе с Леонидом Лебедевым и Вадимом Горяниновым основал кинокомпанию «Красная стрела». <br><br>
+            
+            Является президентом фестиваля новых сериалов «Пилот».</p>
+      </div>
+      </div> 
+    </div>
+  </section>
+</body>
+</html>

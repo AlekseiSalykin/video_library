@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="menu.js" defer></script>
+    <title>KINOPOTERYA</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__title">  
+        <h1 class="h1">Добро Пожаловать!</h1>
+        <h1 class="__h1"><a class="logo" href="index.html">КиноПотеря</a></h1>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="menu">
+        <div class="button">
+          <div class="btnGen">
+            <button onclick="list_genere()" class="list">Список жанров</button>
+            <div id="dropListGen" class="dropList">
+              <a href="romantic.html">Драмы</a>
+              <a href="comedian.html">Комедии</a>
+              <a href="horrors.html">Ужасы</a>
+            </div>
+          </div>
+          <div class="btnFilms">
+            <button onclick="list_films()" class="list">Полный список фильмов</button>
+          </div>
+          <div class="btnProd">
+            <button onclick="list_producer()" class="list">Список режиссеров</button>
+            <div id="dropListProd" class="dropList">
+              <a href="todorovsky.html" class="btnProd">Валерий Тодоровский</a>
+              <a href="todorovsky.html" class="btnProd">Юрий Быков</a>
+              <a href="todorovsky.html" class="btnProd">Кирилл Серебренников</a>
+            </div>
+          </div>
+        </div>
+        <form action="" method="get">
+          <input name="s" placeholder="Искать здесь...">
+          <button class="search"><img src="image/Vector.svg" alt=""></button>
+        </form>        
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="fullField">
+      <div id="selectBtn" class="listFilms">
+        <button class="btnFilm">«Майо́р» 2013 г. Юрий Быков</button>
+        <button class="btnFilm">«Мой сводный брат Франкенштейн» 2004 г. Валерий Тодоровский</button>
+        <button class="btnFilm">«Юрьев день» 2008 г. Кирилл Серебренников</button>
+        <button class="btnFilm">«Дурак» 2014 г. Юрий Быков</button>
+      </div>
+      <div class="films">
+          <div id="content" class="contentFilm"> 
+            <h1 class="name">Выберите фильм</h1>
+            <img src="image/драма.jpg" alt="" class="drama">
+          </div>
+          <div className="films">
+            <div class="film" style="display: none">
+              <h1 class="name">«Майо́р»</h1>
+            </div>
+            <div class="film" style="display: none">
+              <h1 class="name">«Мой сводный брат Франкенштейн»</h1>
+            </div>
+            <div class="film" style="display: none">
+              <h1 class="name">«Юрьев день»</h1>
+            </div>
+            <div class="film" style="display: none">
+              <h1 class="name">«Дурак»</h1>
+            </div>         
+          </div>          
+          <div class="descriptionFilm">
+            <div id="description" class="descriptionFilms">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quasi tempora quidem et perferendis blanditiis accusantium,
+                doloremque corporis nisi. Non et asperiores placeat veritatis, 
+                repudiandae suscipit cum quam? Itaque, quae harum?</p>
+            </div>
+            <div>
+              <p class="film-description" style="display: none">
+              Разбуженный ранним звонком майор полиции Сергей Соболев мчится в роддом к лежащей на сохранении жене. На скользкой зимней дороге он насмерть сбивает семилетнего мальчика на глазах у несчастной матери. Майор понимает, что виноват, но велик соблазн оправдаться, используя служебное положение и связи.
+              </p>
+              <p class="film-description" style="display: none">Главный герой фильма с удивлением узнает, что где-то в провинции у него есть взрослый сын Павел, инвалид Чеченской войны, и что ему нужна срочная операция, которую нужно делать в Москве. Поэтому новоявленный родственник не просто приедет погостить, а поселится в его московской квартире.
+              Герой не хочет впускать чужака в свою жизнь, но и отмахнуться от него, отправить его на улицу, ему тоже неловко. Он все больше привязывается к своему взрослому сыну, чего не скажешь о его жене и их детях, которые не могут и не хотят принять странного юношу, одержимого навязчивыми идеями. Павлу кажется, что война не закончилась, и он должен спасти свою новую семью от врагов, даже если его об этом не просят…</p>
+              <p class="film-description" style="display: none">Ее зовут Любовь. У нее есть многое: талант, богатство, мировая слава. Еще у нее есть сын, и есть малая родина, куда она приезжает проститься, прежде чем покинуть страну. Тут с женщиной происходит неожиданное.</p>
+              <p class="film-description" style="display: none">Действие происходит в провинциальном российском городе. Молодого слесаря-сантехника Дмитрия Никитина, который попутно учится на инженера-строителя, вечером вызывают в общежитие, где прорвало водопроводную трубу. В ходе осмотра здания Никитин определяет, что оно находится в аварийном состоянии и может рухнуть. Он едет домой, где понимает, что здание не выдержит больше суток. В общежитии проживают более восьмисот человек, которые даже не подозревают о грозящей им опасности.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
