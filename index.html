@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="menu.js" defer></script>
+  <title>KINOPOTERYA</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__title">  
+        <h1 class="h1">Добро Пожаловать!</h1>
+        <h1 class="__h1"><a class="logo" href="index.html">КиноПотеря</a></h1>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="menu">
+        <div class="button">
+          <div class="btnGen">
+            <button onclick="list_genere()" class="list">Список жанров</button>
+            <div id="dropListGen" class="dropList">
+              <a href="romantic.html">Драмы</a>
+              <a href="comedian.html">Комедии</a>
+              <a href="horrors.html">Ужасы</a>
+            </div>
+          </div>
+          <div class="btnFilms">
+            <button onclick="list_films()" class="list">Полный список фильмов</button>
+          </div>
+          <div class="btnProd">
+            <button onclick="list_producer()" class="list">Список режиссеров</button>
+            <div id="dropListProd" class="dropList">
+              <a href="todorovsky.html" class="btnProd">Валерий Тодоровский</a>
+              <a href="todorovsky.html" class="btnProd">Юрий Быков</a>
+              <a href="todorovsky.html" class="btnProd">Кирилл Серебренников</a>
+            </div>
+          </div>
+        </div>
+        <form action="" method="get">
+          <input name="s" placeholder="Искать здесь...">
+          <button class="search"><img src="image/Vector.svg" alt=""></button>
+        </form>        
+      </div>
+    </div>
+  </section>
+  <section>
+    <figure>
+      <img src="image/кино.jpg" alt="">
+    </figure>    
+  </section>
+  <section>
+    <div class="description">
+      <h2>Описание</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Asperiores nobis mollitia molestiae numquam est. Ipsa aut 
+        blanditiis fugit odit iure, cupiditate reiciendis debitis 
+        eos perferendis laboriosam saepe reprehenderit provident corporis.
+      </p>
+    </div>    
+  </section>
+</body>
+</html>

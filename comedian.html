@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="menu.js" defer></script>
+    <title>KINOPOTERYA</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__title">  
+        <h1 class="h1">Добро Пожаловать!</h1>
+        <h1 class="__h1"><a class="logo" href="index.html">КиноПотеря</a></h1>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="menu">
+        <div class="button">
+          <div class="btnGen">
+            <button onclick="list_genere()" class="list">Список жанров</button>
+            <div id="dropListGen" class="dropList">
+              <a href="romantic.html">Драмы</a>
+              <a href="comedian.html">Комедии</a>
+              <a href="horrors.html">Ужасы</a>
+            </div>
+          </div>
+          <div class="btnFilms">
+            <button onclick="list_films()" class="list">Полный список фильмов</button>
+          </div>
+          <div class="btnProd">
+            <button onclick="list_producer()" class="list">Список режиссеров</button>
+            <div id="dropListProd" class="dropList">
+              <a href="todorovsky.html">Валерий Тодоровский</a>
+              <a href="bykov.html">Юрий Быков</a>
+              <a href="serebrenikov.html">Кирилл Серебренников</a>
+            </div>
+          </div>
+        </div>
+        <form action="" method="get">
+          <input name="s" placeholder="Искать здесь...">
+          <button class="search"><img src="image/Vector.svg" alt=""></button>
+        </form>        
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="fullField">
+      <div id="selectBtn" class="listFilms">
+        <button class="btnFilm">«Ёлки 1914» 2014 г. Юрий Быков</button>
+        <button class="btnFilm">«Стиля́ги» 2008 г. Валерий Тодоровский</button>
+        <button class="btnFilm">«Страна глухих» 1997 г. Валерий Тодоровский</button>
+      </div>
+      <div class="films">
+          <div id="content" class="contentFilm"> 
+            <h1 class="name">Выберите фильм</h1>
+            <img src="image/драма.jpg" alt="" class="drama">
+          </div>
+          <div className="films">
+            <div class="film" style="display: none">
+              <h1 class="name">«Ёлки 1914»</h1>
+            </div>
+            <div class="film" style="display: none">
+              <h1 class="name">«Стиля́ги»</h1>
+            </div>
+            <div class="film" style="display: none">
+              <h1 class="name">«Страна глухих»</h1>
+            </div>         
+          </div>          
+          <div class="descriptionFilm">
+            <div id="description" class="descriptionFilms">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quasi tempora quidem et perferendis blanditiis accusantium,
+                doloremque corporis nisi. Non et asperiores placeat veritatis, 
+                repudiandae suscipit cum quam? Itaque, quae harum?</p>
+            </div>
+            <div>
+              <p class="film-description" style="display: none">100 лет назад, Российская империя… Канун Рождества. Декабрьские пробки, праздничные гулянья, роскошные балы и скромные праздники, титулованные дворяне и обычные крестьяне, царская семья и солдаты первой мировой войны, прогрессивные поэты и первые фигуристы – все было по-другому, за исключением … праздника. Люди готовились, жили, верили, мечтали и ждали настоящего чуда – Рождества!</p>
+              <p class="film-description" style="display: none">Действие фильма происходит в Москве в 1955 году. Сталин уже умер, но культ личности ещё не разоблачён Никитой Хрущёвым. В столице появилось так называемое «стиляжничество». Стиляги — это молодые люди, увлекающиеся джазом и рок-н-роллом и предпочитающие свободный и яркий стиль жизни и одежды серому официозу «жлобов» — примерных советских граждан. Их образ жизни резко контрастирует со скучным, убогим послевоенным советским бытом. Но в стране всё ещё действует директива о борьбе против «безродного космополитизма». И к борьбе со «стилягами» подключены комсомольские патрули и дружины.</p>
+              <p class="film-description" style="display: none">Героиня фильма Рита вынуждена скрываться: её друг Алёша исчез, проиграв в рулетку чужие деньги. Её спасает и прячет у себя глухая танцовщица ночного клуба Яя, живущая единственной мечтой - накопить денег и уехать в некую сказочную «страну глухих», где живут только глухие люди, и поэтому царит добро и справедливость. Неожиданно девушки оказываются в центре жестокого столкновения двух кланов мафии, глухих и слышащих.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
